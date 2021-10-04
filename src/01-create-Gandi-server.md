@@ -1,4 +1,4 @@
-# Création d'un serveur chez Gandi
+# Création du serveur chez Gandi
 
 ## Création du serveur
 
@@ -138,4 +138,4 @@ ssh {{ username }}@{{ server_IPv4 }} -p 22
 ```
 
 ---
-[>> Étape suivante : Mises à jour](02-update-and-upgrade.md)
+[>> Étape suivante : Mises à jour du serveur](02-update-and-upgrade.md)

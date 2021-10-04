@@ -39,7 +39,7 @@ sudo apt install sudo
 /usr/sbin/adduser {{ username }} sudo
 ```
 
-### Déconnectez votre utilisateur système
+### Déconnectez votre utilisateur système et tester la commande sudo
 
 1. Rebasculez vers votre utilisateur système.
 
@@ -63,6 +63,26 @@ ssh {{ username }}@{{ server_IPv4 }} -p 22
 
 ```bash
 sudo apt update
+```
+
+## Permettre les commandes depuis n'importe quel chemin avec $PATH
+
+1. Editez le fichier des variables d'environnement.
+
+```bash
+sudo vi /etc/environment
+```
+
+2. Ajoutez les chemins vers les dossiers des commandes. 
+
+```bash
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+```
+
+3. Tester
+
+```bash 
+sudo adduser --help
 ```
 
 ---
