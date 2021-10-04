@@ -179,11 +179,11 @@ sudo blkid
 *Contrôlez les labels, types de disque et UUIDs. Notez ensuite les UUIDs respectifs des disques **xvdb** et **xvdc***.
 
 ```bash
-/dev/xvdz1: LABEL="swap" UUID="f200d142-45fd-411b-a0aa-d8fab94a669d" TYPE="swap" PARTLABEL="gandiswap" PARTUUID="7c6072d0-2512-11ec-b712-ac1f6b0fff66"
-/dev/xvda1: LABEL="debian-buster" UUID="01e4a304-e4a0-4b1d-adbc-866afe76158e" TYPE="ext4" PARTLABEL="gandiroot" PARTUUID="3e5cdc53-0216-487e-affc-95ef40610cb8"
-/dev/xvdb: LABEL="h01-datas" UUID="5a92f4ac-0011-47ea-af61-7a3d6fa4c7b7" TYPE="ext4"
-/dev/xvdc: LABEL="h01-backup" UUID="f332ac86-1c03-44ee-8568-007eac5b6ab6" TYPE="ext4"
-/dev/xvdz2: PARTLABEL="gandiconfig" PARTUUID="7c6072d7-2512-11ec-b712-ac1f6b0fff66"
+/dev/xvdz1: LABEL="swap" UUID="7c558b77-535b-469e-9b34-c9fff9fbde37" TYPE="swap" PARTLABEL="gandiswap" PARTUUID="3c2eceb4-5157-497a-a706-d8d21a2831c8"
+/dev/xvda1: LABEL="debian-buster" UUID="b4280e48-4ebd-4b0c-a3e1-d5b040e61364" TYPE="ext4" PARTLABEL="gandiroot" PARTUUID="d6c8e31a-baf3-492e-9cf6-2877b177572a"
+/dev/xvdb: LABEL="h01-datas" UUID="9ff511be-1b33-45ac-89e5-c5323752cd3c" TYPE="ext4"
+/dev/xvdc: LABEL="h01-backup" UUID="2e3c7fa1-1883-4e79-b6fd-54d5f498132c" TYPE="ext4"
+/dev/xvdz2: PARTLABEL="gandiconfig" PARTUUID="3fd30f26-50b7-4e6f-bb77-3c042f302fab"
 ```
 
 #### En cas de problème de génération d'UUID identique
