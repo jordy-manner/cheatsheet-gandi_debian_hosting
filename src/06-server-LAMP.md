@@ -8,13 +8,7 @@ Les paquets PHP7.4, PHP8.0 et PHP8.1 ne sont pas disponibles sur les serveurs mi
 Il faut donc ajouter **sury** à la liste des dépôts des paquets d'installation déclarés.
 
 ```bash
-sudo apt install -y lsb-release apt-transport-https ca-certificates wget
-```
-
-```bash
-sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
-```
-
-```bash
+sudo apt install -y lsb-release apt-transport-https ca-certificates wget && \
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg && \
 sudo echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" |sudo tee /etc/apt/sources.list.d/php.list
 ```
