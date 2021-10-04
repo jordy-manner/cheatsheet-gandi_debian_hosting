@@ -105,8 +105,22 @@ Suivre la même procédure que pour la création du disque de données.
 
 ![Gandi config volume datas create](../resources/screenshot/01-config-volume_backup_created.png)
 
-## Configuration des DNS
+## Configuration des DNS chez Gandi
 
-### Récupération de l'IP du serveur
+1. Récupérez l'IPv4 et l'IPv6 du serveur depuis l'interface d'administration du serveur
 
-Depuis la liste des serveurs, cliquer sur le serveur que vous avez créé.
+![Gandi config DNS get IP](../resources/screenshot/01-config-DNS_get_IP.png)
+
+2. Rendez-vous dans l'interface d'administration des domaines de Gandi
+
+[Liste des domaines Gandi](https://admin.gandi.net/domain/)
+
+![Gandi config DNS list](../resources/screenshot/01-config-DNS_list.png)
+
+3. Sélectionnez le nom de domaine a éditer
+
+Cliquez sur le domaine a éditer et rendez-vous dans l'onglet **Enregistrement DNS**.
+
+4. Configurer ...
+
+@TODO
