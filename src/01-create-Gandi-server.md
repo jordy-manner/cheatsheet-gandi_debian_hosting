@@ -131,6 +131,10 @@ Cliquez sur le bouton **Démarrer**.
 
 ![Gandi config server reboot](../resources/screenshot/01-config-server-reboot.png)
 
+## Joindre le serveur en SSH
 
+```bash
+ssh {{ username }}@{{ server_IPv4 }} -p 22
+```
 
 [>> Étape suivante : Groupe et habilitations](02-groups-and-capabilities.md)
