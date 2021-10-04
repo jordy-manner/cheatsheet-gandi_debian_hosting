@@ -113,3 +113,11 @@ mail.info                       -/var/log/mail.info
 mail.warn                       -/var/log/mail.warn
 mail.err                        /var/log/mail.err
 ```
+
+## Ajout des dépôts des paquets d'installation Apache et PHP pour Ubuntu
+
+```bash
+sudo apt-get install software-properties-common && \
+sudo add-apt-repository ppa:ondrej/apache2 && \
+sudo add-apt-repository ppa:ondrej/php
+```
