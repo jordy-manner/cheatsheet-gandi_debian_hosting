@@ -124,3 +124,5 @@ Cliquez sur le domaine a éditer et rendez-vous dans l'onglet **Enregistrement D
 4. Configurer ...
 
 @TODO
+
+## Rédemarrez le serveur
