@@ -137,4 +137,4 @@ Cliquez sur le bouton **Démarrer**.
 ssh {{ username }}@{{ server_IPv4 }} -p 22
 ```
 
-[>> Étape suivante : Groupe et habilitations](02-groups-and-capabilities.md)
+[>> Étape suivante : Mises à jour](02-update-and-upgrade.md)
