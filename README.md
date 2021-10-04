@@ -1,5 +1,9 @@
 # Procédure d'installation d'un serveur d'hébergement chez Gandi
 
+Cette documentation explique comment installer un serveur d'hébergement Web complet chez Gandi.
+
+[Site officiel de Gandi](https://www.gandi.net)
+
 ## Table des matières
 
 - [00 - Prérequis](/src/00-prerequisite.md)
