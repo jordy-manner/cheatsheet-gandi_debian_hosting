@@ -1,6 +1,6 @@
-# Groupe et Habilitations
+# 03 - Groupes et Habilitations
 
-## Groupe et habilitations de votre utilisateur système
+## Groupes et habilitations de votre utilisateur système
 
 1. Créez un groupe correspondant à votre nom d'utilisateur.
 
