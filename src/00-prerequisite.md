@@ -19,22 +19,24 @@
 
 ### Variables
 
-**Définition de variables :** {{ var }}
+**Définition de variables :** ```{{ var }}```
 
-**Prefixes de variables :**
+**Numéro de serveur :** ```{{ ## }}```
+
+**Type de server :**
 
 - h : serveur de production
 - r : serveur de recette
 
-**Numéro de serveur :** ##
+Exemple d'usage : ```{{ (h|r)## }}```
 
 ### Nommage serveurs
 
-- Production : hostingserver{{ ## }}
-- Recette : stagingserver{{ ## }}
+- Production : hostingserver```{{ ## }}```
+- Recette : stagingserver```{{ ## }}```
 
 ### Nommage des disques
 
-- Système : {{ (h|r)## }}-sys
-- Données : {{ (h|r)## }}-datas
-- Sauvegarde : {{ (h|r)## }}-backup
+- Système : ```{{ (h|r)## }}```-sys
+- Données : ```{{ (h|r)## }}```-datas
+- Sauvegarde : ```{{ (h|r)## }}```-backup
