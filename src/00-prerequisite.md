@@ -40,3 +40,6 @@ Exemple d'usage : ```{{ (h|r)## }}```
 - Système : ```{{ (h|r)## }}```-sys
 - Données : ```{{ (h|r)## }}```-datas
 - Sauvegarde : ```{{ (h|r)## }}```-backup
+
+---
+[>> Étape suivante : Création du serveur chez Gandi](01-create-Gandi-server.md)

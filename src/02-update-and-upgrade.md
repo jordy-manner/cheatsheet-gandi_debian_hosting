@@ -65,4 +65,5 @@ ssh {{ username }}@{{ server_IPv4 }} -p 22
 sudo apt update
 ```
 
+---
 [>> Étape suivante : Groupes et Habilitations](03-groups-and-capabilities.md)

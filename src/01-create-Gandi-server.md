@@ -137,4 +137,5 @@ Cliquez sur le bouton **Démarrer**.
 ssh {{ username }}@{{ server_IPv4 }} -p 22
 ```
 
+---
 [>> Étape suivante : Mises à jour](02-update-and-upgrade.md)
