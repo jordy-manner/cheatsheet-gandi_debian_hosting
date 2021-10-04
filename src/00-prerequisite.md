@@ -32,8 +32,8 @@ Exemple d'usage : ```{{ (h|r)## }}```
 
 ### Nommage serveurs
 
-- Production : hostingserver```{{ ## }}```
-- Recette : stagingserver```{{ ## }}```
+- Production : hosting```{{ ## }}```
+- Recette : staging```{{ ## }}```
 
 ### Nommage des disques
 
