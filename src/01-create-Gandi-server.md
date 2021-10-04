@@ -126,3 +126,11 @@ Cliquez sur le domaine a éditer et rendez-vous dans l'onglet **Enregistrement D
 @TODO
 
 ## Rédemarrez le serveur
+
+Cliquez sur le bouton **Démarrer**.
+
+![Gandi config server reboot](../resources/screenshot/01-config-server-reboot.png)
+
+
+
+[>> Étape suivante : Groupe et habilitations](02-groups-and-capabilities.md)
