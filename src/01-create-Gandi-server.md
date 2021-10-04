@@ -4,4 +4,4 @@
 
 [Interface de connection Gandi](https://id.gandi.net)
 
-![Gandi login page](../resources/screenshot/01.login.png)
+![Gandi login page](../resources/screenshot/01-login.png)
