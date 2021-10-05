@@ -121,3 +121,24 @@ sudo apt-get install software-properties-common && \
 sudo add-apt-repository ppa:ondrej/apache2 && \
 sudo add-apt-repository ppa:ondrej/php
 ```
+
+## MySQL
+
+Déclarer les répertoires de stockage dans Apparmor
+
+```bash
+sudo vi /etc/apparmor.d/usr.sbin.mysqld
+```
+
+```diff
+/var/lib/mysql/ r,
+/var/lib/mysql/** rwk,
++/srv/{{ (h|r)## }}-datas/var/lib/mysql/ r,
++/srv/{{ (h|r)## }}-datas/var/lib/mysql/** rwk,
+/var/log/mysql/ r,
+/var/log/mysql/* rw,
+```
+
+```bash
+sudo systemctl restart apparmor
+```

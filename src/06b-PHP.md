@@ -101,6 +101,12 @@ Exemple de configuration :
 sudo apt install php-cgi php-cli php-curl php-gd php-imagick php-imap php-intl php-mbstring php-mysql php-soap php-xml php-zip
 ```
 
+### Activer mbstring (Recommandé)
+
+```bash
+sudo phpenmod mbstring
+```
+
 ## Installation étendue
 
 ### Installation de plusieurs versions de PHP
