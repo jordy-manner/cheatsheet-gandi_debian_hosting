@@ -143,12 +143,16 @@ sudo systemctl stop mysql
 
 4. Copie des données du disque système vers le disque de données :
 
+Passer en mode super-utilisateur
+
 ```bash
 sudo -s
 ```
 
-```bash
-cp -p /var/lib/mysql/* -R ${SERVER_DATAS_PATH}/var/lib/mysql/ && \
+Copier le dossier
+
+```
+cp -p /var/lib/mysql/* -R /srv/{{ (h|r)## }}-datas/var/lib/mysql/ && \
 exit
 ```
 
@@ -169,10 +173,10 @@ sudo mysql -h localhost -u root -p -e 'CREATE DATABASE `_delete` CHARACTER SET u
 ls -l
 ```
 
-> le dossier ```_delete``` doit exister
+> le dossier ```_delete``` doit exister !
 
 ```bash
-sudo mysql -h localhost -u root -e 'DROP DATABASE `_delete`;'
+sudo mysql -h localhost -u root -p-e 'DROP DATABASE `_delete`;'
 ```
 
 ## Commandes utiles
