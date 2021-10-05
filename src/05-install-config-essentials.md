@@ -27,6 +27,34 @@ sudo chown -R root.root ${SERVER_BACKUP_PATH}
 
 ## Installation des utilitaires
 
+### net-tools
+
+**Net-tools** fourni des utilitaires qui permettent entre autre de récupérer des informations sur le réseaux du serveur.
+
+```bash
+sudo apt install net-tools
+```
+
+Tester l'installation :
+
+```bash
+sudo ifconfig
+```
+
+### Htop
+
+**Htop** fourni une interface terminal de visualisation des ressources du serveur.
+
+```bash
+sudo apt install htop
+```
+
+Tester l'intallation :
+
+```bash
+htop
+```
+
 ### Vim
 
 **Vim** est un éditeur de texte en ligne de commande. Il s'agit d'une version amélioré de **vi**.

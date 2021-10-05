@@ -73,7 +73,7 @@ sudo apt update
 sudo vi /etc/environment
 ```
 
-2. Ajoutez les chemins vers les dossiers des commandes. 
+2. Ajoutez les chemins vers les dossiers des commandes.
 
 ```bash
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
@@ -83,6 +83,42 @@ PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/u
 
 ```bash 
 sudo adduser --help
+```
+
+## Création des variables d'environnement personnalisées
+
+1. Ouvrir le fichier des variables d'environnement.
+
+```bash
+sudo vi /etc/environment
+```
+
+2. Ajouter les entrées suivantes :
+
+```diff
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
++SERVER_DATAS_PATH="/srv/{{ (h|r)## }}-datas"
++SERVER_BACKUP_PATH="/srv/{{ (h|r)## }}-backup"
++SERVER_HOSTNAME="{{ DNS_hostname }}"
++SERVER_ADMIN_EMAIL="{{ admin_email }}"
+```
+
+3. Déconnectez votre administrateur système du serveur et reconnectez-vous en SSH si nécessaire puis testez.
+
+```bash
+echo ${SERVER_DATAS_PATH}
+```
+
+```bash
+echo ${SERVER_BACKUP_PATH}
+```
+
+```bash
+echo ${SERVER_HOSTNAME}
+```
+
+```bash
+echo ${SERVER_ADMIN_EMAIL}
 ```
 
 ---

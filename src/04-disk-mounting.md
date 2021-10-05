@@ -6,37 +6,6 @@
 - Le disque de données contient l'ensemble des données (sites web, FTP, configuration, journaux etc.), de manière à offrir une meilleure scalabilité et portabilité.
 - Le disque de sauvegarde contient une sauvegarde des données sensible des disques de données et système.
 
-## Création des variables d'environnement
-
-1. Ouvrir le fichier des variables d'environnement.
-
-```bash
-sudo vi /etc/environment
-```
-
-2. Ajouter les entrées suivantes :
-
-```diff
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
-+SERVER_DATAS_PATH="/srv/{{ (h|r)## }}-datas"
-+SERVER_BACKUP_PATH="/srv/{{ (h|r)## }}-backup"
-+SERVER_HOSTNAME="{{ DNS_hostname }}"
-```
-
-3. Déconnectez votre administrateur système du serveur et reconnectez-vous en SSH si nécessaire puis testez.
-
-```bash
-echo ${SERVER_DATAS_PATH}
-```
-
-```bash
-echo ${SERVER_BACKUP_PATH}
-```
-
-```bash
-echo ${SERVER_HOSTNAME}
-```
-
 ## Contrôle des partitions
 
 Contrôle de présence physique :
