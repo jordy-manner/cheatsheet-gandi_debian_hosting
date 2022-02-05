@@ -29,7 +29,7 @@ sudo a2enconf php5.6-fpm php7.0-fpm php7.1-fpm php7.2-fpm php7.3-fpm php7.4-fpm 
 sudo vi /etc/apache2/sites-enabled/000-default.conf  
 ``` 
 
-```bash
+```diff
 <VirtualHost *:80> 
 +    Include /etc/apache2/conf-available/php8.1-fpm.conf 
     Use vhost 000-default 
@@ -73,7 +73,7 @@ sudo vi ${SERVER_DATAS_PATH}/var/www/html/000-default/cnf/php8.1-fpm/www.conf
 
 A la fin du fichier, ajouter les instructions suivantes :
 
-```bash
+```diff
 ; Default Value: nothing is defined by default except the values in php.ini and
 ;                specified at startup with the -d argument
 ;php_admin_value[sendmail_path] = /usr/sbin/sendmail -t -i -f www@my.domain.com
@@ -102,7 +102,7 @@ sudo vi /etc/php/8.1/fpm/php-fpm.conf
 
 A la fin du fichier, ajouter l'instruction suivante :
 
-```bash
+```diff
 include=/etc/php/8.1/fpm/pool.d/*.conf
 +include=/srv/{{ (h|r)## }}-datas/var/www/html/*/cnf/php8.1-fpm/www.conf
 ```
