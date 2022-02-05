@@ -12,5 +12,11 @@ Cette documentation explique comment installer un serveur d'hébergement Web com
 - [03 - Groupes et Habilitations](/src/03-groups-and-capabilities.md)
 - [04 - Montage des disques](/src/04-disk-mounting.md)
 - [05 - Installation et configuration des essentiels](/src/05-install-config-essentials.md)
+- [06 - Installation du serveur LAMP](/src/06-server-LAMP.md)
+  - [a - Installation d'Apache](/src/06a-apache.md)
+  - [b - Installation de PHP](/src/06b-PHP.md)
+  - [c - Installation de PHP FPM](/src/06c-PHP-Fpm.md)
+  - ...
+  - [e - Installation de MySQL](/src/06e-MySQL.md)
 - ...
 - [99 - Annexe](/src/99-annexe.md)
