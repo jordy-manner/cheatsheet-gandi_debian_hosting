@@ -88,7 +88,7 @@ sudo mysqladmin -u root password {{ ROOT_PASSWORD_OR_EMPTY }}
 sudo mysql -u root -p
 ```
 
-### Habilité depuis la boucle local
+### Habilité depuis la boucle locale
 
 ```bash
 mysql> CREATE USER '{{ username }}'@'localhost' IDENTIFIED WITH mysql_native_password BY '{{ password }}';

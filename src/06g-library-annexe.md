@@ -27,7 +27,7 @@ curl -sS https://getcomposer.org/installer | php && \
 sudo mv composer.phar /usr/local/bin/composer.phar
 ```
 
-Ou suivre la [documentation officiel](https://getcomposer.org/download/)
+Ou suivre la [documentation officielle](https://getcomposer.org/download/)
 
 ### Créer un alias pour l'utilisateur système courant
 

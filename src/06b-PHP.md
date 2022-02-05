@@ -163,7 +163,7 @@ sudo apt install php8.1 php8.1-cgi php8.1-cli php8.1-curl php8.1-gd php8.1-imagi
 
 #### Modifier la version courante de PHP
 
-Désactivation de toutes les version :
+Désactivation de toutes les versions :
 
 ```bash
 sudo a2dismod php5.6 && \
